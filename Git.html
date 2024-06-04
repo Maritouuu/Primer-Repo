@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git para Desarrollo Web: Potencia tu Flujo de Trabajo</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f4; 
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        h1, h2, h3 {
+            color: #2980b9; 
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-top: 50px;
+        }
+
+        .feature-image {
+            max-width: 100%;
+            height: auto;
+            margin: 30px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        code {
+            background-color: #e9e9e9;
+            padding: 5px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        ul {
+            list-style: none; 
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li::before {
+            content: "\2022"; 
+            color: #2980b9;   
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Git para Desarrollo Web: Potencia tu Flujo de Trabajo</h1>
+
+        <img src="OIP.jpg" alt="Logo de Git" class="feature-image">
+
+        <p>Git es una herramienta fundamental para cualquier desarrollador web. Te permite:</p>
+        <ul>
+            <li><strong>Gestionar el historial de tu sitio:</strong> Realiza un seguimiento de cada cambio en tu código, revierte errores y colabora con otros desarrolladores de manera eficiente.</li>
+            <li><strong>Crear ramas para nuevas funcionalidades:</strong> Experimenta con nuevas características sin afectar la versión principal de tu sitio.</li>
+            <li><strong>Implementar cambios de forma segura:</strong> Despliega actualizaciones en tu sitio web con confianza, sabiendo que puedes revertir fácilmente si algo sale mal.</li>
+        </ul>
+
+        <h2>Flujo de Trabajo Básico con Git</h2>
+        
+        <ol>
+            <li><strong>Inicializar un repositorio:</strong>
+                <p>Abre tu terminal y navega hasta la carpeta de tu proyecto. Luego, ejecuta:</p>
+                <code>git init</code></li>
+            <li><strong>Agregar cambios al área de preparación (Staging):</strong>
+                <p>Después de hacer cambios en tus archivos, agrega los que deseas incluir en el próximo commit:</p>
+                <code>git add .</code> (para agregar todos los cambios) o <code>git add nombre_archivo</code> (para agregar un archivo específico)</li>
+            <li><strong>Crear un commit:</strong>
+                <p>Registra los cambios preparados con un mensaje descriptivo:</p>
+                <code>git commit -m "Mensaje descriptivo del commit"</code></li>
+            <li><strong>Enviar cambios al repositorio remoto (Push):</strong>
+                <p>Si estás trabajando con un repositorio remoto (como GitHub), envía tus commits:</p>
+                <code>git push origin nombre_rama</code></li>
+        </ol>
+
+        <h2>Recursos Útiles</h2>
+        <ul>
+            <li><a href="https://git-scm.com/doc" target="_blank">Documentación oficial de Git</a></li>
+            <li><a href="https://try.github.io/" target="_blank">Tutorial interactivo de GitHub</a></li>
+        </ul>
+    </div>
+</body>
+</html>
